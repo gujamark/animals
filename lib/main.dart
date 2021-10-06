@@ -49,7 +49,8 @@ class _HomePageState extends State<HomePage> {
                       image_source = "https://www.balisafarimarinepark.com/wp-content/uploads/2019/12/monkey-and-apes-1200x675-cropped.jpg";
                     });
                   },
-                  child: Text("Animal 1")),
+                  width: 150,
+                  child: Text("Monkey")),
                 ElevatedButton(
                   // Zebra
                     onPressed: () {
@@ -57,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                         image_source = "https://www.spreekbeurtenstartpagina.nl/wp-content/uploads/2020/09/Werkstuk-over-de-Zebra.jpg";
                       });
                     },
-                    child: Text("Animal 2")),
+                    child: Text("Zebra")),
               ]
             ),
 
@@ -70,14 +71,14 @@ class _HomePageState extends State<HomePage> {
                       image_source = "https://images0.persgroep.net/rcs/QE2qjVLB_kx4q7LEHyKew1SBMPg/diocontent/201192664/_focus/0.51/0.35/_fill/1200/630/?appId=21791a8992982cd8da851550a453bd7f&quality=0.7";
                     });
                   },
-                  child: Text("Animal 3")),
+                  child: Text("Giraffe")),
                 ElevatedButton(
                     onPressed: () {
                       setState(() {
                         image_source = "https://www.rtlnieuws.nl/sites/default/files/content/images/2019/07/28/The-Lion-King-OV-_st_1_jpg_sd-high_%C2%A9-2019-Disney-Enterprises-Inc-All-Rights-Reserved.jpg?itok=h6aWL0YO&width=1024&height=576&impolicy=semi_dynamic";
                       });
                     },
-                    child: Text("Animal 4")),],
+                    child: Text("Lion")),],
             ),
           ],
         ),
