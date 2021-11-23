@@ -1,9 +1,10 @@
+import 'package:animals/providers/animals_provider.dart';
 import 'package:flutter/material.dart';
-import 'screens/portrait_screen.dart';
-import 'screens/landscape_screen.dart';
+import 'package:provider/provider.dart';
+import 'screens/home_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: [ChangeNotifierProvider(create: (_) => AnimalsProvider())] , child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -22,14 +23,7 @@ class MyApp extends StatelessWidget {
             child: Text("Animals"),
           ),
         ),
-        body: OrientationBuilder(
-            builder: (BuildContext context, Orientation orientation) {
-          if (orientation == Orientation.portrait) {
-            return PortraitScreen();
-          } else {
-            return LandscapeScreen();
-          }
-        }),
+        body: const HomeScreen(),
       ),
       theme: ThemeData(
           elevatedButtonTheme: ElevatedButtonThemeData(

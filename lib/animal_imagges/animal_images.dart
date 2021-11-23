@@ -20,8 +20,5 @@ class Animal {
   late String imageURL;
   late String description;
 
-  Animal(String imageURL, String description) {
-    this.imageURL = imageURL;
-    this.description = description;
-  }
+  Animal(this.imageURL, this.description);
 }
